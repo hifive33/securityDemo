@@ -8,7 +8,9 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
 import global.sesoc.test13.dto.MemberVO;
+import lombok.Getter;
 
+@Getter
 public class CustomUser extends User {
 	private static final long serialVersionUID = 1L;
 	
@@ -24,8 +26,4 @@ public class CustomUser extends User {
 		this.member = vo;
 	}
 
-	public MemberVO getMember() {
-		return member;
-	}
-	
 }
